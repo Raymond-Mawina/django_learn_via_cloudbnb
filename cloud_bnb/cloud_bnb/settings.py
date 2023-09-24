@@ -76,10 +76,11 @@ WSGI_APPLICATION = "cloud_bnb.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "OPTIONS": {
-            "service": "my_service",
-            "passfile": ".my_pgpass",
-        },
+        "NAME": "dev_db",
+        "USER": "user",
+        "PASSWORD": "pass",
+        "HOST": "localhost",
+        "PORT": "5443",
     }
 }
 
